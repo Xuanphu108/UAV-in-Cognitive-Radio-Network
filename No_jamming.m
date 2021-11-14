@@ -25,46 +25,46 @@ d_cs_e = (sqrt((x_cs-x_e)^2+(y_cs-y_e)^2))^(-phi); % the distance between the co
 d_cs_pu = (sqrt((x_cs-x_pu)^2+(y_cs-y_pu)^2))^(-phi); % the distance between the cognitive source and the primary user
 
 %%%%%%%%%%%%%%%%%%%%%%%%% - SecrecyRate_Iteration - %%%%%%%%%%%%%%%%%%%%%%%
-fid_SercrecyRate_Threshold = fopen('..\40m\Output\Threshold\SecrecyRate_Iteration\No_Jamming\Secrecy_Rate.txt','w');
-fid_Iteration_Threshold = fopen('..\40m\Output\Threshold\SecrecyRate_Iteration\No_Jamming\Iteration.txt','w');
+fid_SercrecyRate_Threshold = fopen('..\UAV\Output\Threshold\SecrecyRate_Iteration\No_Jamming\Secrecy_Rate.txt','w');
+fid_Iteration_Threshold = fopen('..\UAV\Output\Threshold\SecrecyRate_Iteration\No_Jamming\Iteration.txt','w');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% - SecrecyRate_Time - %%%%%%%%%%%%%%%%%%%%%%%%%%%
-fid_SecrecyRate = fopen('..\40m\Output\SecrecyRate_Time\No_Jamming\Secrecy_Rate.txt','w');
-fid_Time = fopen('..\40m\Output\SecrecyRate_Time\No_Jamming\Time.txt','w');
+fid_SecrecyRate = fopen('..\UAV\Output\SecrecyRate_Time\No_Jamming\Secrecy_Rate.txt','w');
+fid_Time = fopen('..\UAV\Output\SecrecyRate_Time\No_Jamming\Time.txt','w');
 
-fid_PowerSource_1 = fopen('..\40m\Output\Power_Source\No_Jamming\Power_Source_1.txt','w');
-fid_TimeSlot1_1 = fopen('..\40m\Output\Power_Source\No_Jamming\Time_Slot1.txt','w');
-fid_PowerSource_2 = fopen('..\40m\Output\Power_Source\No_Jamming\Power_Source_2.txt','w');
-fid_TimeSlot1_2 = fopen('..\40m\Output\Power_Source\No_Jamming\Time_Slot2.txt','w');
-fid_PowerSource_3 = fopen('..\40m\Output\Power_Source\No_Jamming\Power_Source_3.txt','w');
-fid_TimeSlot1_3 = fopen('..\40m\Output\Power_Source\No_Jamming\Time_Slot3.txt','w');
-fid_PowerSource_4 = fopen('..\40m\Output\Power_Source\No_Jamming\Power_Source_4.txt','w');
-fid_TimeSlot1_4 = fopen('..\40m\Output\Power_Source\No_Jamming\Time_Slot4.txt','w');
-fid_PowerSource_5 = fopen('..\40m\Output\Power_Source\No_Jamming\Power_Source_5.txt','w');
-fid_TimeSlot1_5 = fopen('..\40m\Output\Power_Source\No_Jamming\Time_Slot5.txt','w');
-fid_PowerSource_6 = fopen('..\40m\Output\Power_Source\No_Jamming\Power_Source_6.txt','w');
-fid_TimeSlot1_6 = fopen('..\40m\Output\Power_Source\No_Jamming\Time_Slot6.txt','w');
-fid_PowerSource_7 = fopen('..\40m\Output\Power_Source\No_Jamming\Power_Source_7.txt','w');
-fid_TimeSlot1_7 = fopen('..\40m\Output\Power_Source\No_Jamming\Time_Slot7.txt','w');
-fid_PowerSource_8 = fopen('..\40m\Output\Power_Source\No_Jamming\Power_Source_8.txt','w');
-fid_TimeSlot1_8 = fopen('..\40m\Output\Power_Source\No_Jamming\Time_Slot8.txt','w');
+fid_PowerSource_1 = fopen('..\UAV\Output\Power_Source\No_Jamming\Power_Source_1.txt','w');
+fid_TimeSlot1_1 = fopen('..\UAV\Output\Power_Source\No_Jamming\Time_Slot1.txt','w');
+fid_PowerSource_2 = fopen('..\UAV\Output\Power_Source\No_Jamming\Power_Source_2.txt','w');
+fid_TimeSlot1_2 = fopen('..\UAV\Output\Power_Source\No_Jamming\Time_Slot2.txt','w');
+fid_PowerSource_3 = fopen('..\UAV\Output\Power_Source\No_Jamming\Power_Source_3.txt','w');
+fid_TimeSlot1_3 = fopen('..\UAV\Output\Power_Source\No_Jamming\Time_Slot3.txt','w');
+fid_PowerSource_4 = fopen('..\UAV\Output\Power_Source\No_Jamming\Power_Source_4.txt','w');
+fid_TimeSlot1_4 = fopen('..\UAV\Output\Power_Source\No_Jamming\Time_Slot4.txt','w');
+fid_PowerSource_5 = fopen('..\UAV\Output\Power_Source\No_Jamming\Power_Source_5.txt','w');
+fid_TimeSlot1_5 = fopen('..\UAV\Output\Power_Source\No_Jamming\Time_Slot5.txt','w');
+fid_PowerSource_6 = fopen('..\UAV\Output\Power_Source\No_Jamming\Power_Source_6.txt','w');
+fid_TimeSlot1_6 = fopen('..\UAV\Output\Power_Source\No_Jamming\Time_Slot6.txt','w');
+fid_PowerSource_7 = fopen('..\UAV\Output\Power_Source\No_Jamming\Power_Source_7.txt','w');
+fid_TimeSlot1_7 = fopen('..\UAV\Output\Power_Source\No_Jamming\Time_Slot7.txt','w');
+fid_PowerSource_8 = fopen('..\UAV\Output\Power_Source\No_Jamming\Power_Source_8.txt','w');
+fid_TimeSlot1_8 = fopen('..\UAV\Output\Power_Source\No_Jamming\Time_Slot8.txt','w');
 
-fid_Rate_1 = fopen('..\40m\Output\Rate\No_Jamming\Rate_1.txt','w');
-fid_TimeSlot2_1 = fopen('..\40m\Output\Rate\No_Jamming\Time_Slot1.txt','w');
-fid_Rate_2 = fopen('..\40m\Output\Rate\No_Jamming\Rate_2.txt','w');
-fid_TimeSlot2_2 = fopen('..\40m\Output\Rate\No_Jamming\Time_Slot2.txt','w');
-fid_Rate_3 = fopen('..\40m\Output\Rate\No_Jamming\Rate_3.txt','w');
-fid_TimeSlot2_3 = fopen('..\40m\Output\Rate\No_Jamming\Time_Slot3.txt','w');
-fid_Rate_4 = fopen('..\40m\Output\Rate\No_Jamming\Rate_4.txt','w');
-fid_TimeSlot2_4 = fopen('..\40m\Output\Rate\No_Jamming\Time_Slot4.txt','w');
-fid_Rate_5 = fopen('..\40m\Output\Rate\No_Jamming\Rate_5.txt','w');
-fid_TimeSlot2_5 = fopen('..\40m\Output\Rate\No_Jamming\Time_Slot5.txt','w');
-fid_Rate_6 = fopen('..\40m\Output\Rate\No_Jamming\Rate_6.txt','w');
-fid_TimeSlot2_6 = fopen('..\40m\Output\Rate\No_Jamming\Time_Slot6.txt','w');
-fid_Rate_7 = fopen('..\40m\Output\Rate\No_Jamming\Rate_7.txt','w');
-fid_TimeSlot2_7 = fopen('..\40m\Output\Rate\No_Jamming\Time_Slot7.txt','w');
-fid_Rate_8 = fopen('..\40m\Output\Rate\No_Jamming\Rate_8.txt','w');
-fid_TimeSlot2_8 = fopen('..\40m\Output\Rate\No_Jamming\Time_Slot8.txt','w');
+fid_Rate_1 = fopen('..\UAV\Output\Rate\No_Jamming\Rate_1.txt','w');
+fid_TimeSlot2_1 = fopen('..\UAV\Output\Rate\No_Jamming\Time_Slot1.txt','w');
+fid_Rate_2 = fopen('..\UAV\Output\Rate\No_Jamming\Rate_2.txt','w');
+fid_TimeSlot2_2 = fopen('..\UAV\Output\Rate\No_Jamming\Time_Slot2.txt','w');
+fid_Rate_3 = fopen('..\UAV\Output\Rate\No_Jamming\Rate_3.txt','w');
+fid_TimeSlot2_3 = fopen('..\UAV\Output\Rate\No_Jamming\Time_Slot3.txt','w');
+fid_Rate_4 = fopen('..\UAV\Output\Rate\No_Jamming\Rate_4.txt','w');
+fid_TimeSlot2_4 = fopen('..\UAV\Output\Rate\No_Jamming\Time_Slot4.txt','w');
+fid_Rate_5 = fopen('..\UAV\Output\Rate\No_Jamming\Rate_5.txt','w');
+fid_TimeSlot2_5 = fopen('..\UAV\Output\Rate\No_Jamming\Time_Slot5.txt','w');
+fid_Rate_6 = fopen('..\UAV\Output\Rate\No_Jamming\Rate_6.txt','w');
+fid_TimeSlot2_6 = fopen('..\UAV\Output\Rate\No_Jamming\Time_Slot6.txt','w');
+fid_Rate_7 = fopen('..\UAV\Output\Rate\No_Jamming\Rate_7.txt','w');
+fid_TimeSlot2_7 = fopen('..\UAV\Output\Rate\No_Jamming\Time_Slot7.txt','w');
+fid_Rate_8 = fopen('..\UAV\Output\Rate\No_Jamming\Rate_8.txt','w');
+fid_TimeSlot2_8 = fopen('..\UAV\Output\Rate\No_Jamming\Time_Slot8.txt','w');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 k = 1;
